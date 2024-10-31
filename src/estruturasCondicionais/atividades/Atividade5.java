@@ -15,6 +15,7 @@ public class Atividade5 {// Escolha um produto pelo código e sua quantidade que
 
 		System.out.println("Código do produto: [1 a 6]");
 		codigo = leia.nextInt();
+		
 
 		switch (codigo) {
 
@@ -42,19 +43,24 @@ public class Atividade5 {// Escolha um produto pelo código e sua quantidade que
 			nome = "Suco de laranja";
 			valorProduto = 13;
 			break;
-
-		default:
-			System.out.println("CÓDIGO INVÁLIDO");
-			System.exit(0);
+			
+			default :
+				System.out.println("CÓDIGO INVÁLIDO");
+				System.exit(0);
 		}
 
-		System.out.println("Quantidade do produto:");
-		quantidade = leia.nextInt();
 
-		valorTotal = valorProduto * quantidade;
+		
+			System.out.println("Quantidade do produto:");
+			quantidade = leia.nextInt();
 
-		System.out.printf("\nProduto: %s", nome);
-		System.out.printf("\n\nValor total: R$ %.2f ", (double) valorTotal);
+			valorTotal = valorProduto * quantidade;
+
+			System.out.printf("\nProduto: %s", nome);
+			System.out.printf("\n\nValor total: R$ %.2f ", (double) valorTotal);
+	
+			
+		
 
 		leia.close();
 	}

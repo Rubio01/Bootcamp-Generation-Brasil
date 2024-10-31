@@ -20,10 +20,11 @@ public class Atividade8 {
 		int codigo = leia.nextInt();
 
 		switch (codigo) {
-		
+
 		case 1:
-			System.out.printf("Saldo = R$ %.2f",saldo);
+			System.out.printf("Saldo = R$ %.2f", saldo);
 			break;
+
 		case 2:
 			System.out.println("Valor:");
 			valor = leia.nextFloat();
@@ -32,21 +33,23 @@ public class Atividade8 {
 				System.out.println("Saldo Insuficiente!");
 			} else {
 				novoSaldo = saldo - valor;
-				System.out.printf("Novo saldo = R$ %.2f",novoSaldo);
+				System.out.printf("Novo saldo = R$ %.2f", novoSaldo);
 			}
 			break;
+
 		case 3:
 			System.out.println("Operação - Depósito");
 			System.out.println("Valor:");
 			valor = leia.nextFloat();
 			novoSaldo = saldo + valor;
-			System.out.printf("Novo saldo = R$ %.2f",novoSaldo);
+			System.out.printf("Novo saldo = R$ %.2f", novoSaldo);
 			break;
-
+  
 		default:
 			System.out.println("Opção Inválida!");
 			break;
 		}
+
 		leia.close();
 	}
 
